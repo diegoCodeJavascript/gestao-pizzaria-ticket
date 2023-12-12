@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema de Pizzaria</title>
+    <!--Google fonts txt suporte -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <!--Google fonts txt suporte -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff; /* branco */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #login-container {
+            background-color: #28a745; /* verde */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #login-container h3 {
+            color: white; /* vermelho */
+        }
+
+        #login-form {
+            margin-top: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #login-button {
+            background-color: #dc3545; /* vermelho */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #login-button:hover {
+            background-color: #c82333; /* vermelho mais escuro */
+        }
+        #logosistema{
+            position: absolute;top: 25px;width: 255px;left: 100px;
+            border-radius: 55px;
+        }
+        #tecsuporte{
+            position: absolute;top: 455px;text-align: center;
+            font-family: 'Rowdies', sans-serif;
+
+        }
+        #textcontatosuport{
+            font-size: 21px; 
+        }
+    </style>
+</head>
+<body>
+   <img src="logoap.jpg" id="logosistema" />
+    <div id="login-container">
+        <h3>Sistema de gestão pizzaria ticket</h3>
+        <form id="login-form">
+            <input type="text" id="celular" placeholder="Celular" required>
+            <input type="password" id="senha" placeholder="Senha" required>
+            <button type="button" id="login-button">Entrar</button>
+        </form>
+    </div>
+    <div id="tecsuporte">
+        <h2>Suporte do Software</h2>
+        <h4 id="textcontatosuport">Desenvolvido por Programador:Diego Lamana,(11)95866-1618</h4>
+    </div>
+</body>
+</html>
